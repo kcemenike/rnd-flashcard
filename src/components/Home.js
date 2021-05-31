@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { StyleSheet, View, FlatList } from 'react-native'
 import { Text as TextElement, FAB } from 'react-native-elements'
 
-import { addStack } from '../action'
+import { addStack } from '../actions'
 import ListQuizCard from './ListQuizCard'
 import { getInitialData } from '../utils'
 
@@ -17,10 +17,10 @@ const styles = StyleSheet.create({
 
 const Home = (props) => {
   useEffect(() => {
-      getInitialData().then(
-        stack => {props.fetchStacks(stack)},
-      )
-    }
+    getInitialData().then(
+      stack => { props.fetchStacks(stack) },
+    )
+  }
     , [])
 
   const renderStack = ({ item }) => {
@@ -28,7 +28,7 @@ const Home = (props) => {
   }
 
   return (
-    <View style={{ flex: 1, backgroundColor: '#b1e3fc'}}>
+    <View style={{ flex: 1, backgroundColor: '#b1e3fc' }}>
       <FlatList
         data={Object.keys(props.stacks)}
         renderItem={renderStack}
@@ -52,11 +52,11 @@ const Home = (props) => {
   )
 }
 
-function mapDispatchToProps (dispatch) {
+function mapDispatchToProps(dispatch) {
   return { fetchStacks: (stack) => { dispatch(addStack(stack)) } }
 }
 
-function mapStateToProps (stack) {
+function mapStateToProps(stack) {
   return {
     stacks: stack,
   }

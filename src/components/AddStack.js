@@ -1,18 +1,18 @@
 import { connect } from "react-redux";
 import React, { useState } from 'react';
-import { StyleSheet, Button, TextInput, View } from 'react-native';
+import { Button, TextInput, View } from 'react-native';
 import { Text } from 'react-native-elements'
 
 import { addNewStack } from "../utils";
-import { addStack } from "../action";
+import { addStack } from "../actions";
 
-const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
+// const styles = StyleSheet.create({
+//   center: {
+//     flex: 1,
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+// });
 
 const AddStack = (props) => {
   const [title, setTitle] = useState('');

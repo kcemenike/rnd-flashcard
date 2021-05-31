@@ -2,7 +2,7 @@ import { StyleSheet, Button, Text, TextInput, View } from 'react-native';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
-import { addNewQuiz } from '../action';
+import { addNewQuiz } from '../actions';
 import { addNewQuizCard } from '../utils';
 
 const styles = StyleSheet.create({

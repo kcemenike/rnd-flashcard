@@ -1,9 +1,9 @@
 import { connect } from "react-redux";
 import React, { useEffect, useState } from 'react'
-import { StyleSheet, View, Button, TouchableOpacity } from 'react-native';
-import { Button as ButtonElement, Card, Text } from "react-native-elements";
+import { StyleSheet, View, Button } from 'react-native';
+import { Text } from "react-native-elements";
 
-import { addStack } from '../action';
+import { addStack } from '../actions';
 import { clearNotifications, getInitialData, scheduleLocalNotification } from '../utils';
 import ScoreCard from './ScoreCard'
 
