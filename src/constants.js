@@ -1,0 +1,5 @@
+export const ADD_QUIZ = 'ADD_QUIZ';
+export const NEW_STACK = 'NEW_STACK';
+
+export const STORAGE_KEY = 'RND-RN-FLASHCARDS-STORAGE';
+export const NOTIFICATION_KEY = 'RND-RN-FLASHCARDS-NOTIFICATION';
