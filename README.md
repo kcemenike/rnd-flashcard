@@ -1,4 +1,4 @@
-# My Universal React Project
+# React Native Mobile Flashcard
 
 <p>
   <!-- iOS -->
@@ -15,8 +15,40 @@
   </a>
 </p>
 
+This app helps to create mobile flashcards (and is an accompanying project for the React Developer Nanodegree programme with Udacity)
+
+## Features
+
+- Simple landing page
+
+<img src="./assets/01_landing.jpg" width="200">
+
+- Add Stack
+
+<img src="./assets/02_AddStack.jpg" width="200">
+
+- Add Quiz to stack
+
+<img src="./assets/03_QuizList.jpg" width="200">
+<img src="./assets/04_AddQuiz.jpg" width="200">
+<img src="./assets/05_QuizAdded.jpg" width="200">
+
+- Notification
+
+- Check quiz scores
+
+<img src="./assets/06_Results.jpg" width="200">
+
 ## 🚀 How to use
 
+- Clone this git with
+  ```sh
+  git clone https://github.com/kcemenike/rnd-flashcard.git
+  ```
+  and then
+  ```sh
+  cd rnd-flashcard
+  ```
 - Install packages with `yarn` or `npm install`.
   - If you have native iOS code run `npx pod-install`
 - Run `yarn start` to start the bundler.
